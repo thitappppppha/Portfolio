@@ -1,0 +1,1069 @@
+@import url(https://db.onlinewebfonts.com/c/8d223b3ad8d4819e9dcf22757e4cc2c4?family=Arial);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: BinancePlex, Arial, sans-serif!important;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/*เริ่มเเก้ nev BAR*/
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #181a1f;
+    color: white;
+    scroll-behavior: smooth;
+    
+
+    
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color: #ecb70f;
+}
+
+header{
+    position: fixed;
+    padding: 0 2rem;
+   
+     
+}
+.Logo{
+    color: #ecb70f;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    background: #181a1f;
+    
+}
+
+.navbar .Logo a{
+    font-size: 3rem;
+    color: #ecb70f;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 5rem;
+}
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255,255 , 0.1);   
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.dropdown_menu .open{
+    height: 240px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 992px){
+    .navbar .links{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+ /*จบเเก้ nev bar*/
+
+
+/* Custom scroll bar css*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #181a1f;
+}
+::-webkit-scrollbar-thumb{
+    background: #ecb70f;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #ecb70f;
+}
+
+/* nav bar style*/
+nav{
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    font-size: clamp(2.5rem ,0.5rem+5vw,3rem);
+   
+}
+
+.nav-container .links{
+    display: flex;
+    
+}
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+    
+}
+
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ecb70f;
+    transition: 0.2s linear;
+    
+}
+.nav-container .links a:hover::before{
+    width: 100%;
+    
+}
+.nav-container .links a:hover{
+    color: #ecb70f;
+    
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px #ecb70f;
+    transition: 0.2s linear;
+}
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+
+}
+.dropdown .links a:hover{
+    background-color: #ecb70f;
+}
+section{
+    width: 100%;
+    min-height: 90vh;
+    padding: 5rem 9% 5rem;
+}
+section .main-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    align-items: center;
+
+}
+
+/*-----------------------------*/
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.Logo{
+    font-size: 3rem;
+    color: #ecb70f;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.Logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active{
+    color: #ecb70f;
+}    
+
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #ecb70f;
+        border-bottom: 3px solid #ecb70f;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #181a1f;
+        border-top: 0.1rem solid #181a1f;
+
+    }
+
+
+    nav.active {
+        display: block;
+    }
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+ 
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #ecb70f;
+    }
+}
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+
+}
+.home{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: #181a1f;
+}
+
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+span {
+    color: #ecb70f;
+}
+
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    
+
+}
+.home-content p{
+    font-size: 12.8px;
+    line-height: 18px;
+   
+}
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #ecb70f;
+    cursor: pointer;
+    transition: 0.2s linear;
+
+}
+
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #ecb70f;
+    font-size: 2rem;
+    border-radius:50% ;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #ecb70f;
+}
+
+.social-icons a:hover{
+    color: #181a1f;
+    transform: scale(1.3)translateY(-5px);
+    background-color: #ecb70f;box-shadow: 0 0 25px #ecb70f;
+
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #181a1f;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #ecb70f;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #ecb70f;
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color:#ecb70f;
+    color: #181a1f;
+    box-shadow: 0 0 25px #ecb70f;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+
+}
+
+.typing-text span{
+    position: relative; 
+}
+
+.typing-text span::before{
+    content: "software Developer";
+    color: #ecb70f;
+    animation: words 20s infinite;
+}
+.typing-text span::after{
+    content: "";
+    background-color: #181a1f;
+    position: absolute;
+    width: calc(100%+8px);
+    height: 100%;
+    border-left: 3px solid #181a1f;
+    right: -8;
+    animation: cursor 0.6s infinite;
+
+}
+
+@keyframes cursor{
+    to{
+        border-left:  3px solid #ecb70f;
+
+    }
+}
+
+@keyframes words{
+    0% ,20%{
+        content: "Web Developer" ;
+    }
+    21% ,40%{
+        content: "Developer" ;
+    }
+    41%,61%{
+        content:"Web Designer" ;
+    }
+    61%,80%{
+        content: "Youtuber";
+    }
+    81%,100%{
+        content: "Script Writer";
+    }
+}
+
+@media (max-width:1000px){
+    .home{
+        gap:4rem;
+    }
+}
+
+@media (max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+    .home .home-content h3{
+        font-size: 2.5rem;
+    }
+    .home .home-content h1{
+        font-size: 5rem;
+
+    }
+    .home-img img{
+        width: 70vw;
+        margin-top: 4rem;
+
+    }
+}
+
+@media (max-width:500px){
+    main-container .image{
+        width: 50;
+        height: 60%;
+        margin-bottom: 0px;
+
+     }
+     .main-container .content{
+        width: 80%;
+     }
+     .main-container button{
+        margin-top: 15px;
+     }
+    .skill-details .boxes .per{
+        font-size: 50px;
+        color: #ecb70f;
+    }
+}
+ 
+/*่ส่วนขแง about me*/
+section .content{
+    width: 80%;
+    margin: 0px auto;
+    font-family:BinancePlex, Arial, sans-serif!important ;
+}
+.about .about-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+section .title span{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+    
+}
+
+section .title span::before,
+section .title span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ecb70f;
+    left: 0;
+    bottom: 0;
+}
+
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.about .about-details .left{
+    width: 45%;
+
+}
+.about .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+} 
+
+.about-details .right{
+    width: 55%;
+}
+
+.about .right .topic{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    
+}
+.about-details .right p{
+    text-align: justify;
+    color: white;
+    font-size: 12.8px;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+section .button{
+    margin: 16px 0;
+
+}
+section .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #ecb70f;
+    color: #fff;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+section .button .button:hover{
+    border-color: #ecb70f;
+    background-color: #fff;
+    color: #ecb70f; 
+       /*---------------------------------------*/
+}
+.skills{
+    background: #181a1f;
+}
+.skills .content{
+    padding: 40px 0;
+    
+
+}
+.skills .content .title{
+    margin-bottom: 55px;
+}
+
+.skills .skills-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills-details .text{
+    width: 50%;  
+}
+.skills .skills-details .topic{
+    font-size: 25px;
+    margin-bottom: 15px;
+
+     /*---------------------------*/
+}
+.skills-details p{
+    color: white;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 12.8px;
+    line-height: 18px;
+}
+
+.skills .skills-details .experience{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.skills-details .experience .num{
+    color: white;
+    font-size: 80px;
+}
+
+.skills-details .experience .exp{
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 6px;
+}
+
+.skills-details .boxes{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width:1213px){
+    .skills-details .boxes{
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+}
+.skills-details .box{
+    width: calc(100%/2-20px);
+    margin: 20px 0;
+
+}
+.skills-details .boxes .topic{
+    font-size: 20px;
+    color: #ecb70f;
+}
+.skills-details .boxes .per{
+    font-size: 60px;
+    color: #ecb70f;
+}
+
+
+/*ส่วนของ go to top*/
+.goTopBtn{
+    position: fixed;
+    width: 40px;
+    height: 50px;
+    background: white;
+    bottom: 40px;
+    right: 50px;
+    color: #181a1f;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    
+}
+
+/*เข้าส่วนของ education journey*/
+
+
+.journey-title {
+    text-align: center; /* Center the text */
+    font-size: 5rem; /* Adjust font size as needed */
+    color: white; /* Match the color scheme */
+    margin-top: 150px; /* Add space from the top */
+}
+
+
+
+
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+
+
+}
+
+.container{
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown{
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container:nth-child(1){
+    animation-delay: 0s;
+}
+.container:nth-child(2){
+    animation-delay: 1s;
+}
+.container:nth-child(3){
+    animation-delay: 2s;
+}
+.container:nth-child(4){
+    animation-delay: 3s;
+}
+.container:nth-child(5){
+    animation-delay: 4s;
+}
+.container:nth-child(6){
+    animation-delay: 5s;
+}
+
+/*การขยายกล่องข้อความของ ส่วน journey box */   /*ไว้ทำทีหลังงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงง*/
+.text-box{
+    padding: 20px 30px;
+    background-color: transparent;
+    border: 0.4rem solid #ecb70f;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: padding-bottom 0.5s ease, padding 0.5s ease; /* Smooth transition */              /*เพิ่มมาเเค่นี้*/
+
+}
+
+.text-box:hover{
+    
+    padding-bottom: 200px;
+}
+
+.left-container{
+    left: 0;   /*มีอยู่เเล้ว*/
+     /*เริ่มเพิ่ม*/
+    
+    cursor: pointer ;
+    transition: transform 0.5s ease;  ;
+}
+
+/*การขยายกล่องข้อความของ ส่วน journey box */                      /*ไว้ทำทีหลังงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงง*/
+
+.right-container{
+    left:50% ;
+}
+
+.container img{
+    position: absolute;
+    width: 40px;
+    border-radius: 50;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+.right-container img{
+    left: -20px;    
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 6s linear forwards;
+
+}
+
+@keyframes moveline{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+.text-box h2{
+    font-size: 600;
+
+}
+
+.text-box small{
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+.left-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ecb70f;
+    right: -15px;
+}
+
+.right-container-arrow{
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #ecb70f;
+    left: -15px;
+}
+
+@media screen and (max-width:600px) {
+
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px; 
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box small{
+        margin-bottom: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+    .left-container img, .right-container img{
+        left: 10px;
+    }
+    .left-container-arrow, .right-container-arrow{
+        border-right: 15px solid #ecb70f;
+        border-left: 0;
+        left: -15px;
+    }
+}
+
+/*ส่วนของ Education (case study)*/
+.wrapper{
+    font-family: BinancePlex, Arial, sans-serif!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #181a1f;
+    color: white;
+
+}
+.wrapper h1{
+    font-size: 3rem;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 100px;
+
+}
+
+.wrapper h2{
+    font-size: 2rem;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 20px;
+
+}
+
+.wrapper p{
+    font-size: 1.3rem;
+    margin: 25px 0;
+    text-align: center;
+    font-weight: 00;
+    margin-top: 5px;
+
+}
+.content-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin-top: 30px;
+    margin: 5px 0;
+
+}
+
+.card{
+    min-height: 220px;
+    width: 320px;
+    padding: 30px;
+    border-radius:5px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #2e2a21;
+    margin: 10px 4px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.2);
+    
+
+}
+
+.card i{
+    
+    margin: 20px;
+    color: white;
+    font-size: 2.5rem
+    
+
+}
+.card h3{
+    margin-bottom: 12px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.card p1{
+    color: rgba(255, 255, 255, 0.598);
+    text-align: center;
+    
+    
+}
+
+.card:hover i,    /*important hover*/
+.card:hover p1{
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.card:hover i{
+    animation: bounce 0.7s cubic-bezier(0.49,0,0.89,0.74) infinite alternate;
+    text-shadow: 0 0 5px #ecb70f;
+}
+@keyframes bounce{
+    0%{
+        transform: translateY(-17px);
+    }
+    75%{
+
+    }
+    90%{
+
+    }
+    100%{
+        transform: translateY(0px);
+    }
+
+
+}
+
+a.card:hover h3{
+    font-weight: 1000;
+}
+
+
+.card:nth-child(1):hover{
+    background: linear-gradient(45deg,
+                                rgba(239,185,11,0.75) 0%,
+                                rgba(125, 107, 53, 0.75)100%),
+     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.23.53-modified.png') no-repeat center center;
+     background-size: cover;
+     cursor: pointer;
+}
+
+.card:nth-child(2):hover{
+    background: linear-gradient(45deg,
+                                rgba(239,185,11,0.75) 0%,
+                                rgba(125, 107, 53, 0.75)100%),
+     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     background-size: cover;
+     cursor: pointer;
+
+}
+
+.card:nth-child(3):hover{
+    background: linear-gradient(45deg,
+                                rgba(239,185,11,0.75) 0%,
+                                rgba(125, 107, 53, 0.75)100%),
+     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     background-size: cover;
+     cursor: pointer;
+}
+
+.card:nth-child(4):hover{
+    background: linear-gradient(45deg,
+                                rgba(239,185,11,0.75) 0%,
+                                rgba(125, 107, 53, 0.75)100%),
+     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     background-size: cover;
+     cursor: pointer;
+}
+
+.card:nth-child(5):hover{
+    background: linear-gradient(45deg,
+                                rgba(239,185,11,0.75) 0%,
+                                rgba(125, 107, 53, 0.75)100%),
+     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     background-size: cover;
+     cursor: pointer;
+}
+
+.card:nth-child(6):hover{
+    background: linear-gradient(45deg,
+                                rgba(239,185,11,0.75) 0%,
+                                rgba(125, 107, 53, 0.75)100%),
+     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     background-size: cover;
+     cursor: pointer;
+}

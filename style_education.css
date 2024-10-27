@@ -1,0 +1,236 @@
+@import url(https://db.onlinewebfonts.com/c/8d223b3ad8d4819e9dcf22757e4cc2c4?family=Arial);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: BinancePlex, Arial, sans-serif!important;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/*เริ่มเเก้ nev BAR*/
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #181a1f;
+    color: white;
+    scroll-behavior: smooth;
+  
+}
+
+
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+a:hover{
+    color: #ecb70f;
+}
+
+header{
+    position: fixed;
+    padding: 0 2rem;
+    
+   
+     
+}
+.Logo{
+    color: #ecb70f;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    background: #181a1f;
+    
+}
+
+.navbar .Logo a{
+    font-size: 3rem;
+    color: #ecb70f;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 5rem;
+}
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255,255 , 0.1);   
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.dropdown_menu .open{
+    height: 240px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 992px){
+    .navbar .links{
+        display: none;
+    }
+    .navbar .toggle_btn{
+        display: block;
+    }
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+/* nav bar style*/
+nav{
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: white;
+    opacity: 0;
+    pointer-events: none;
+    font-size: clamp(2.5rem ,0.5rem+5vw,3rem);
+   
+}
+
+.nav-container .links{
+    display: flex;
+    
+}
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.3s linear;
+    
+}
+
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ecb70f;
+    transition: 0.2s linear;
+    
+}
+.nav-container .links a:hover::before{
+    width: 100%;
+    
+}
+.nav-container .links a:hover{
+    color: #ecb70f;
+    
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(4px) brightness(40%);
+    box-shadow: 0 0 20px #ecb70f;
+    transition: 0.2s linear;
+}
+.dropdown .links a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+
+}
+.dropdown .links a:hover{
+    background-color: #ecb70f;
+}
+section{
+    width: 100%;
+    min-height: 90vh;
+    padding: 5rem 9% 5rem;
+}
+section .main-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    align-items: center;
+
+}
+
+
+/*เข้าส่วนของ education journey*/
+
+.education {
+   /* margin-top: 80px; /* Space between header and section */
+    padding: 20px; /* Optional: padding inside the section */
+}
+
+.heading {
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem;
+}
