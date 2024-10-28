@@ -538,24 +538,26 @@ video {
 
 
 .card h5{
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
   font-weight: 100;
   text-align: center;
   
 }
 
-.card p1{
+.card p{
   color: rgba(255, 255, 255, 0.598);
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.8rem;
   
   
 }
 
 .card:hover i,    /*important hover*/
-.card:hover p1{
+.card:hover p{
   color: #fff;
-  cursor: pointer;
+  
   
 }
 
