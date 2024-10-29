@@ -1,0 +1,791 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+
+
+body {
+  margin: 0;
+  color: white;
+  background-color: black;
+  font-size: 28px;
+}
+
+
+h1 {
+  font-size: 110px;
+  margin-bottom: 4rem;
+  
+  
+}
+
+
+.text-box {
+  border: transparent;
+  width: 70%; /* Reduced width to make the box smaller */
+  padding: 15px; /* Adjusted padding for a more compact look */
+  margin: 10px auto; /* Reduced margin and centered the box */
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+
+p {
+  font-size: 24px; /* Or any size you prefer */
+  line-height: 1.6; /* Optional: increase line height for better readability */
+}
+
+/* Styling for p1 */
+.p1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px; /* Adjust font size */
+  color: white; /* Specific color for p1 */
+}
+
+/* Styling for p2 */
+.p2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: white; /* Specific color for p2 */
+}
+
+
+
+.full-screen-section {
+  height: 100vh;  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  padding: 1rem;
+  position: relative;
+  
+}
+
+.top-section .left,
+.top-section .right {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 1rem;
+  padding-left: 3rem;
+}
+
+.top-section {
+  display: flex;
+  text-align: start;
+  padding: 0;
+}
+
+.top-section .left {
+ /* background-color: rgb(248, 250, 249, var(--background-opacity));
+}
+
+.top-section .right {
+  /*background: linear-gradient(
+    210.65deg,
+    rgb(152, 157, 157, var(--background-opacity)) 0%,
+    rgb(189, 194, 194, var(--background-opacity)) 100%
+  );*/
+  
+}
+
+.row {            /*เพิ่งเพิ่มเข้ามา*/
+  display: flex;
+  justify-content: center; /* Center images in a row */
+  flex-wrap: wrap; /* Allow images to wrap if needed (in case of smaller screens) */
+  gap: 20px; /* Add spacing between images */
+  margin-bottom: 300px;
+}
+
+
+.top-section .right .wrapper {
+  height: 100%; /* Ensure wrapper takes up the required space */
+  display: flex; /* Apply flexbox to control items */
+  flex-wrap: wrap; /* Allow items to wrap if needed */
+  width: 90%;        /*start edit*/
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  height: 700px;
+
+  flex-direction: column; /* Stack rows vertically */
+  gap: 30px; /* Adds space between the first and second set of images */
+  align-items: center;
+  
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+  
+}
+
+.top-section .right .wrapper .item {
+  width: 200px;
+  height: 350px;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  object-fit: cover; 
+}
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+}
+
+
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+
+
+
+
+
+.item1 {
+  animation-delay: calc(20s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(20s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(20s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(20s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(20s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(20s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(20s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(20s / 8 * (8 - 8) * -1);
+}
+
+
+/* Reverse the animation delays for each image in the second row */
+.item9  { animation-delay: calc(20s / 8 * (8 - 1)* -1); }
+.item10 { animation-delay: calc(20s / 8 * (8 - 2)* -1); }
+.item11 { animation-delay: calc(20s / 8 * (8 - 3)* -1); }
+.item12 { animation-delay: calc(20s / 8 * (8 - 4)* -1); }
+.item13 { animation-delay: calc(20s / 8 * (8 - 5)* -1); }
+.item14 { animation-delay: calc(20s / 8 * (8 - 6)* -1); }
+.item15 { animation-delay: calc(20s / 8 * (8 - 7)* -1); }
+.item16 { animation-delay: calc(20s / 8 * (8 - 8)* -1); }
+
+
+/*EDIT*/
+
+
+
+
+.imgs > .top-section-img {
+  /* (oldVal - oldMin) * newRange / oldRange + newMin */
+  --value: min(var(--scroll), 30) * 50 / 30;
+  width: calc(50vw + 1vw * var(--value));
+  transform: translateY(calc(50% - 1% * var(--value)));
+}
+
+@media (width <= 1000px) {
+  .top-section .right {
+    display: none;
+  }
+
+  .top-section .left {
+    text-align: center;
+  }
+
+  body {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  .imgs > .top-section-img {
+    width: 100vw;
+  }
+}
+
+:root {
+  --scroll: 0;
+}
+
+.top-section {
+  position: sticky;
+  top: 0;
+  /* (oldVal - oldMin) * newRange / oldRange + newMin */
+  translate: 0 calc(-1% * (max(var(--scroll), 25) - 25) * 100 / 75);
+  --background-opacity: calc(100% - 1% * min(var(--scroll), 30) * 100 / 30);
+}
+
+.first-main-section {
+  padding-top: 10vh;
+}
+
+.social-icons {
+  display: inline-flex;
+  flex-direction: row; /* Stack icon and text vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  flex-direction: column; /* Ensures icon and text are stacked vertically */
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: transparent;
+  font-size: 2rem;
+  margin: 3rem 1.5rem 3rem 0;
+  color: white;
+  pointer-events: none;
+  text-decoration: none; /* Icon color */
+  text-shadow: 0 0 25px deeppink;
+  
+}
+
+.social-icons i {
+  pointer-events: none; /* Disables interaction with the icon only */
+}
+
+.social-icons span {
+  font-size: 1rem; /* Adjust text size */
+  color: white; /* Text color */
+  margin-top: 0.5rem;
+  pointer-events: none;
+  text-decoration: none; /* Space between icon and text */
+}
+
+
+.social-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centers the icon and text horizontally */
+  justify-content: center;
+  text-align: center;   /* Optional: to center the text below the icon */
+}
+
+.social-scroll a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  animation: bounce 0.7s cubic-bezier(0.49,0,0.89,0.74) infinite alternate;
+}
+@keyframes bounce{
+  0%{
+      transform: translateY(-17px);
+  }
+  75%{
+
+  }
+  90%{
+
+  }
+  100%{
+      transform: translateY(0px);
+  }
+
+
+}
+
+.social-scroll i {
+  font-size: 2rem;  /* Adjust icon size as needed */
+  margin-bottom: 0.5rem; /* Space between icon and text */
+}
+
+.social-scroll span {
+  font-size: 1rem;  /* Adjust text size as needed */
+  
+}
+
+.social-scroll {
+  margin-top: 100px; /* Adjust the value as per your requirement */
+}
+
+/*frist scroll icon */
+.social-scroll2 {
+  margin-top: 0.5rem; /* Adjust the value as per your requirement */
+  margin-bottom: 1.5rem;
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Vertically center items */
+  margin-right: 20px; 
+  
+}
+
+.social-scroll2 a {
+  text-decoration: none; /* This removes the underline */
+  color: white; /* Ensure the color remains white or adjust as needed */
+  display: inline-flex; /* Ensure it behaves like a block for the animation */
+  flex-direction: column;
+  
+}
+
+.social-scroll2 i {
+  font-size: 2rem;  /* Adjust icon size as needed */
+  margin-bottom: 0.5rem; /* Space between icon and text */
+}
+
+.social-scroll2 span {
+  font-size: 1rem; 
+  margin-right: 4rem; /* Adjust text size as needed */
+}
+
+
+
+
+
+.imgs > * {
+  position: fixed;
+  width: 100vw;
+  
+  bottom: 0;
+  z-index: 10;
+  translate: 0 100% ;
+  transition: translate 1s ease-in-out;
+}
+
+.imgs > .show {
+  translate: 0 0;
+ 
+}
+
+[data-img-to-show] {
+  position: absolute;
+  top: 20%;
+  
+}
+
+
+/*part add photo and video   2 section*/
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 20px;
+  
+}
+
+.left-column {
+  flex: 1;
+  /*padding-right: 20px;*/
+  padding: 5px;
+}
+
+.right-column {
+  flex: 1.5;
+  /*padding-left: 20px;*/
+  padding: 5px;
+}
+
+.photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+body h2 {
+  font-size: 35px;
+  
+  /*margin-top: 2rem; /* Increase the top margin for more space */
+  margin-bottom: 1rem;
+  text-align: center;
+  
+  
+  
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+
+.video-row {
+  display: flex; /* Makes videos align in a row */
+  
+}
+
+video {
+  margin: 0; /* Remove all margins to eliminate spacing */
+  padding: 0; /* Ensure no padding affects the layout */
+  /* Optional: Set a specific width if necessary */
+  width: 390px; /* Width set in HTML for consistency */
+  height: 500px; /* Height set in HTML for consistency */
+  border: none;
+}
+
+
+
+
+.btn{
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: transparent;
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  color: #9d0d5c;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid #9d0d5c;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.btn:hover{
+  transform: scale3d(1.03);
+  background-color:#9d0d5c;
+  color: white;
+  box-shadow: 0 0 80px #9d0d5c;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+@media (max-width:1074px) {
+  .container .right-column{
+    height: 500px;
+    width: 220px;
+   
+  }
+  .container .left-column img{
+    height: 350px;
+    width: 1500px;
+    
+  }
+  .full-screen-section1 h2{
+    margin-top: 200px !important;
+    text-align: center;
+  }
+ 
+}
+
+/*ส่วนของ what i got*/
+.content-box {
+  display: flex;
+  justify-content: center;   /* Centers the row of cards horizontally */
+  align-items: center;       /* Aligns the cards vertically */
+  flex-wrap: nowrap;         /* Prevents wrapping, keeps cards in one row */
+  width: 100%;               /* Allows for full-width container */
+  overflow-x: auto;          /* Enables horizontal scroll if needed */
+  margin: 30px auto;
+  padding: 0 20px;
+  gap: 20px;                 /* Adds space between cards */
+}
+
+.card {
+  width: 300px;
+  height: 250px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #2e2a21;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.card h5{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
+  
+}
+
+.card p{
+  color: rgba(255, 255, 255, 0.598);
+  text-align: center;
+  font-size: 0.8rem;
+  
+  
+}
+
+.card:hover i,    /*important hover*/
+.card:hover p{
+  color: #fff;
+  
+  
+}
+
+
+
+/*comment*/
+
+body{
+  margin: 0;
+  background-color: black;
+}
+main{
+  width: min(1200px, 90vw);
+  margin: auto;
+}
+.slider{
+  width: 100%;
+  height: var(--height);
+  overflow: hidden;
+  mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 10% 90%,
+      transparent
+  );
+}
+.slider .list{
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+.slider .list .item{
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 30s linear infinite;
+  transition: filter 0.5s;
+  animation-delay: calc( (15s / var(--quantity)) * (var(--position) - 1) - 10s)!important;
+}
+.slider .list .item img{
+  width: 100%;
+}
+@keyframes autoRun{
+  from{
+      left: 100%;
+  }to{
+      left: calc(var(--width) * -1);
+  }
+}
+.slider:hover .item{
+  animation-play-state: paused!important;
+  filter: grayscale(1);
+}
+.slider .item:hover{
+  filter: grayscale(0);
+}
+.slider[reverse="true"] .item{
+  animation: reversePlay 30s linear infinite;
+}
+@keyframes reversePlay{
+  from{
+      left: calc(var(--width) * -1);
+  }to{
+      left: 100%;
+  }
+}
+
+/*ส่วนตัวหนังสือ typing*/
+/* Centering container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  
+  
+}
+
+/* Typing animation styles */
+.typing {
+  width: 900px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  font-size: 4rem;
+  animation: typing 4s steps(12, end) infinite, cursor .5s steps(12, end) infinite;
+  color: white;
+  text-shadow: 10px 2px 30px #ff1596; /* Adjust as needed */
+  font-weight: 1000;
+  
+}
+
+@keyframes typing {
+  from { width: 0; }
+}
+
+@keyframes cursor {
+  50% { border-color: transparent;  }
+}
+
+
+
+/*button */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.btnn {
+  
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background-color: transparent;
+  border-radius: 4rem;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+  border: 2px solid white;
+  transition: 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: -5rem;
+  
+}
+
+.btnn:hover {
+  transform: scale(1.5); /* Use scale instead of scale3d */
+  background-color: #9d0d5c;
+  color: white;
+  box-shadow: 0 0 80px #9d0d5c;
+  border: 2px solid #9d0d5c;
+  cursor: pointer;
+}
+
+
+
+/*ส่วนของ footer*/
+
+footer{
+  background-color:#2e2a21;
+  margin-top: 8rem;
+}
+.footerContainer{
+  width: 100%;
+  padding: 20px 20px 20px ;
+}
+.socialIcons{
+  display: flex;
+  justify-content: center;
+}
+.socialIcons a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i{
+  font-size: 1.5em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialIcons a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+  .socialIcons a{
+      padding: 8px;
+      margin: 4px;
+  }
+}
