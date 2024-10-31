@@ -715,6 +715,20 @@ section .button .button:hover{
     margin-top: 150px; /* Add space from the top */
 }
 
+.journey-description {
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7rem; /* Adjust font size as needed */
+    color: white; /* Match the color scheme */
+    margin: 0 auto;
+    width: 80%;
+    
+}
+
+
 
 
 
@@ -763,6 +777,15 @@ section .button .button:hover{
 .container:nth-child(6){
     animation-delay: 5s;
 }
+.container:nth-child(7){
+    animation-delay: 6s;
+}
+.container:nth-child(8){
+    animation-delay: 7s;
+}
+
+
+
 
 /*การขยายกล่องข้อความของ ส่วน journey box */   /*ไว้ทำทีหลังงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงงง*/
 .text-box{
@@ -778,8 +801,10 @@ section .button .button:hover{
 
 .text-box:hover{
     
-    padding-bottom: 200px;
+    padding-bottom: 4rem;
 }
+
+
 
 .left-container{
     left: 0;   /*มีอยู่เเล้ว*/
@@ -839,6 +864,10 @@ section .button .button:hover{
     margin-bottom: 15px;
 
 }
+.text-box p{
+    line-height: 1.5;
+
+}
 .left-container-arrow{
     height: 0;
     width: 0;
@@ -849,6 +878,7 @@ section .button .button:hover{
     border-bottom: 15px solid transparent;
     border-left: 15px solid #ecb70f;
     right: -15px;
+    
 }
 
 .right-container-arrow{
@@ -894,6 +924,23 @@ section .button .button:hover{
         left: -15px;
     }
 }
+
+/*show hidden text*/
+.text-box .hidden-text {
+    display: none; /* Initially hidden */
+    margin-top: 10px; /* Add margin if needed */
+    color: white; /* Adjust color to fit your design */
+    line-height: 1.2;
+    
+}
+
+.text-box:hover .hidden-text {
+    display: block; /* Show hidden text on hover */
+    
+    
+}
+
+
 
 /*ส่วนของ Education (case study)*/
 .wrapper{
@@ -1067,3 +1114,88 @@ a.card:hover h3{
      background-size: cover;
      cursor: pointer;
 }
+
+/*ส่วนของ footer*/
+
+footer{
+    background-color:#2e2a21;
+    margin-top: 8rem;
+  }
+  .footerContainer{
+    width: 100%;
+    padding: 20px 20px 20px ;
+  }
+  .socialIcons{
+    display: flex;
+    justify-content: center;
+  }
+  .socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+  }
+  .socialIcons a i{
+    font-size: 1.5em;
+    color: black;
+    opacity: 0,9;
+  }
+  /* Hover affect on social media icon */
+  .socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+  }
+  .socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+  }
+  .footerNav{
+    margin: 30px 0;
+  }
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  
+  }
+  .footerNav ul li a:hover{
+    opacity: 1;
+  }
+  .footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+  }
+  .footerBottom p{
+    color: white;
+  }
+  .designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+  }
+  @media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+  }
