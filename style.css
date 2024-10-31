@@ -968,6 +968,7 @@ section .button .button:hover{
     text-align: center;
     font-weight: 800;
     margin-top: 20px;
+    color: #ecb70f;
 
 }
 
@@ -977,6 +978,7 @@ section .button .button:hover{
     text-align: center;
     font-weight: 00;
     margin-top: 5px;
+    
 
 }
 .content-box{
@@ -989,7 +991,7 @@ section .button .button:hover{
 
 }
 
-.card{
+a.card{
     min-height: 220px;
     width: 320px;
     padding: 30px;
@@ -1017,10 +1019,11 @@ section .button .button:hover{
     margin-bottom: 12px;
     font-weight: 400;
     text-align: center;
+    color: white;
     
 }
 
-.card p1{
+.card p{
     color: rgba(255, 255, 255, 0.598);
     text-align: center;
     
@@ -1028,7 +1031,7 @@ section .button .button:hover{
 }
 
 .card:hover i,    /*important hover*/
-.card:hover p1{
+.card:hover p{
     color: #fff;
     cursor: pointer;
     
