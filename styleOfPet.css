@@ -1,3 +1,5 @@
+
+@import url(https://db.onlinewebfonts.com/c/8d223b3ad8d4819e9dcf22757e4cc2c4?family=Arial);
 *,
 *::before,
 *::after {
@@ -767,6 +769,7 @@ footer{
 }
 .footerBottom p{
   color: white;
+  font-size: 1rem;
 }
 .designer{
   opacity: 0.7;
@@ -774,6 +777,7 @@ footer{
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0px 5px;
+  color: #ecb70f;
 }
 @media (max-width: 700px){
   .footerNav ul{

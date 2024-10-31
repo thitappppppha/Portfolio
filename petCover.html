@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" >
         <div class="sofa-container">
             <img src="ภาพถ่ายหน้าจอ_2567-10-13_เวลา_23.13.55-removebg.png"  class="sofa">
         </div>
-        <div class="basket-container">
+        <div class="basket-container" data-aos="fade-up" data-aos-duration="2000">
             <img src="p2.png" id="basket">
         </div>
         <div class="camera-container">
@@ -45,11 +46,14 @@
         </div>
   
         
-        <a href="index 2 20.34.25.html" class="btn">Click To Start</a>
+        <a href="petPage.html" class="btn">Click To Start</a>
     </div>
 
         
-        
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
          
 
         

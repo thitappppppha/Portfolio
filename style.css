@@ -451,19 +451,19 @@ span {
 
 @keyframes words{
     0% ,20%{
-        content: "Web Developer" ;
+        content: "UX-UI Designer" ;
     }
     21% ,40%{
-        content: "Developer" ;
+        content: "Web Designer" ;
     }
     41%,61%{
-        content:"Web Designer" ;
+        content:"Front-end Developer" ;
     }
     61%,80%{
-        content: "Youtuber";
+        content: "UX-UI Designer";
     }
     81%,100%{
-        content: "Script Writer";
+        content: "Web Designer";
     }
 }
 
@@ -513,6 +513,7 @@ span {
  
 /*่ส่วนขแง about me*/
 section .content{
+    
     width: 80%;
     margin: 0px auto;
     font-family:BinancePlex, Arial, sans-serif!important ;
@@ -524,9 +525,10 @@ section .content{
 
 }
 section .title{
+    margin: 10rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 10rem;
 }
 section .title span{
     color: white;
@@ -615,7 +617,7 @@ section .button .button:hover{
 
 }
 .skills .content .title{
-    margin-bottom: 55px;
+    margin-bottom: 10rem;
 }
 
 .skills .skills-details{
@@ -628,7 +630,7 @@ section .button .button:hover{
 }
 .skills .skills-details .topic{
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
      /*---------------------------*/
 }
@@ -644,6 +646,7 @@ section .button .button:hover{
     display: flex;
     align-items: center;
     margin: 0 10px;
+    
 }
 
 .skills-details .experience .num{
@@ -660,7 +663,7 @@ section .button .button:hover{
 }
 
 .skills-details .boxes{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -681,9 +684,10 @@ section .button .button:hover{
 .skills-details .boxes .topic{
     font-size: 20px;
     color: #ecb70f;
+    font-weight: 500;
 }
 .skills-details .boxes .per{
-    font-size: 60px;
+    font-size: 2.5rem;
     color: #ecb70f;
 }
 
@@ -1020,12 +1024,14 @@ a.card{
     font-weight: 400;
     text-align: center;
     color: white;
+    font-size: 1.5rem;
     
 }
 
 .card p{
     color: rgba(255, 255, 255, 0.598);
     text-align: center;
+    font-size: 1.1rem;
     
     
 }
@@ -1180,6 +1186,7 @@ footer{
   }
   .footerBottom p{
     color: white;
+    font-size: 1.5rem;
   }
   .designer{
     opacity: 0.7;
@@ -1203,4 +1210,176 @@ footer{
     }
   }
 
-  /*push*/
+  /*ส่วน phone*/
+  
+section .contentt{
+    
+    width: 80%;
+    margin: 0px auto;
+    font-family:BinancePlex, Arial, sans-serif!important ;
+}
+.aboutt .about-detailss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+section .title{
+    margin: 10rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    margin-bottom: 5rem;
+}
+section .title span{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 8px;
+    
+}
+
+section .title span::before,
+section .title span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ecb70f;
+    left: 0;
+    bottom: 0;
+}
+
+section .title span::after{
+    bottom: -7px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.aboutt .about-detailss .left{
+    width: 45%;
+
+}
+.aboutt .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+} 
+
+.about-detailss .right{
+    width: 55%;
+}
+
+.aboutt .right .topic{
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    
+}
+.about-detailss .right p{
+    text-align: justify;
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+
+/*ส่วนของ email*/
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.208);
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+.contact-left textarea{
+    height: 200px;
+    padding-top: 15px;
+    border-radius: 20px;
+
+}
+
+.contact-inputs:focus{
+    border: 2px solid white;
+
+}
+.contact-inputs::placeholder{
+    color: white;
+
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.208);
+    cursor: pointer;
+
+}
+
+.contact-right{
+    width: 500px;
+
+}
+
+
+/*ส่วนของ contact*/
+.topic2{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    
+}
+.pass{
+    font-size: 1.4rem;
+    line-height: 2;
+}
