@@ -359,7 +359,7 @@ span {
 .home-img img{
     position: relative;
     width: 32vw;
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: 0 0 25px solid #ecb70f;
     cursor: pointer;
     transition: 0.2s linear;
@@ -514,7 +514,7 @@ span {
 /*่ส่วนขแง about me*/
 section .content{
     
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
     font-family:BinancePlex, Arial, sans-serif!important ;
 }
@@ -1073,7 +1073,7 @@ a.card:hover h3{
     background: linear-gradient(45deg,
                                 rgba(239,185,11,0.75) 0%,
                                 rgba(125, 107, 53, 0.75)100%),
-     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.23.53-modified.png') no-repeat center center;
+     url('../Images/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.23.53-modified.png') no-repeat center center;
      background-size: cover;
      cursor: pointer;
 }
@@ -1082,7 +1082,7 @@ a.card:hover h3{
     background: linear-gradient(45deg,
                                 rgba(239,185,11,0.75) 0%,
                                 rgba(125, 107, 53, 0.75)100%),
-     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     url('../Images/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
      background-size: cover;
      cursor: pointer;
 
@@ -1092,7 +1092,7 @@ a.card:hover h3{
     background: linear-gradient(45deg,
                                 rgba(239,185,11,0.75) 0%,
                                 rgba(125, 107, 53, 0.75)100%),
-     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     url('../Images/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
      background-size: cover;
      cursor: pointer;
 }
@@ -1101,7 +1101,7 @@ a.card:hover h3{
     background: linear-gradient(45deg,
                                 rgba(239,185,11,0.75) 0%,
                                 rgba(125, 107, 53, 0.75)100%),
-     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     url('../Images/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
      background-size: cover;
      cursor: pointer;
 }
@@ -1110,7 +1110,7 @@ a.card:hover h3{
     background: linear-gradient(45deg,
                                 rgba(239,185,11,0.75) 0%,
                                 rgba(125, 107, 53, 0.75)100%),
-     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     url('Assets/Images/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
      background-size: cover;
      cursor: pointer;
 }
@@ -1119,7 +1119,7 @@ a.card:hover h3{
     background: linear-gradient(45deg,
                                 rgba(239,185,11,0.75) 0%,
                                 rgba(125, 107, 53, 0.75)100%),
-     url('/Users/fon/Downloads/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
+     url('Assets/Images/ภาพถ่ายหน้าจอ 2567-10-12 เวลา 23.36.02-modified.png') no-repeat center center;
      background-size: cover;
      cursor: pointer;
 }
